@@ -1,0 +1,12 @@
+---
+# defaults file for Proxmox_VMs_stop_k3s
+proxmox_api_host: "127.0.0.1"
+proxmox_api_user: "root@pam"
+proxmox_api_password: "password"
+proxmox_node: "pve" 
+# server
+vm_count_server: 1
+vm_server_id: 100
+# worker
+vm_count_worker: 2
+vm_worker_id: 200
