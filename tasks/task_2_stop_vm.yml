@@ -1,4 +1,4 @@
-- name: Destroy VM server
+- name: Stop VM server
   ignore_errors: true
   community.general.proxmox_kvm:
     api_user: "{{ proxmox_api_user }}"
@@ -10,7 +10,7 @@
     force: true
   loop: "{{ range(vm_server_id, vm_server_id + vm_count_server) | list }}"
 
-- name: Destroy VM worker
+- name: Stop VM worker
   ignore_errors: true
   community.general.proxmox_kvm:
     api_user: "{{ proxmox_api_user }}"
